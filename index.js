@@ -8,7 +8,7 @@ function newImage (image, left, bottom) {
     newElement.style.left = `${left}px`
     newElement.style.bottom = `${bottom}px`
     document.body.append(newElement)  
-}
+
 
     newElement.addEventListener('click', function(){
         newElement.remove()  
