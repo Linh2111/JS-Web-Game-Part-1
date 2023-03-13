@@ -13,14 +13,14 @@ function newImage (image, left, bottom) {
     //adds image to page
     document.body.append(newElement)
     //
-    return newElement
+    //return newElement
 }
 
 // created new function for newItems with three Parameters.
 function newItem(image, left, bottom){
-    //
+    //Declaring a variable and assigning it to newImage
     let newElement = newImage (image, left, bottom)
-    //Removes image when users click from dom
+    //Removes image when users double click from dom
     newElement.addEventListener('dblclick', () => {
         newElement.remove() 
  
