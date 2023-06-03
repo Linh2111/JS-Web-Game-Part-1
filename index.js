@@ -13,28 +13,30 @@ function newImage (image, left, bottom) {
     //adds image to page
     document.body.append(newElement)
     //
-    //return newElement
+    return newElement
 }
 
 // created new function for newItems with three Parameters.
-function newItem(image, left, bottom){
+function newItem(image, left, bottom) {
+   
     //Declaring a variable and assigning it to newImage
-    let newElement = newImage (image, left, bottom)
+    let newElement = newImage(image, left, bottom)
+    
     //Removes image when users double click from dom
-    newElement.addEventListener('dblclick', () => {
-        newElement.remove() 
- 
+    newElement.addEventListener('dblclick', function () {
+        newElement.remove()
     })
 }
 
 // new images with three arguements listed 
-newImage('assets/green-character.gif', 100, 100)
-newImage('assets/tree.png', 200, 300)
-newImage('assets/pine-tree.png', 450, 200)
-newImage('assets/pillar.png', 350, 100)
-newImage('assets/crate.png', 150, 200)
-newImage('assets/well.png', 500, 425)
-newImage('assets/sword.png', 500, 405)
+newItem('assets/green-character.gif', 100, 100)
+newItem('assets/tree.png', 200, 300)
+newItem('assets/pine-tree.png', 450, 200)
+newItem('assets/pillar.png', 350, 100)
+newItem('assets/crate.png', 150, 200)
+newItem('assets/well.png', 500, 425)
+newItem('assets/sword.png', 500, 405)
+
 
 
 
